@@ -62,7 +62,7 @@ namespace Book
             {
                 int currentYear = DateTime.Now.Year;
                 if (value <= 0 || value > currentYear)
-                    throw new ArgumentException("Year of publication must be a positive number and not in the future.");
+                    throw new ArgumentException("Год публикации должен быть положительным числом и не может быть в будущем.");
                 yearOfPublication = value;
             }
         }
