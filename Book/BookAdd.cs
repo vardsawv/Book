@@ -81,15 +81,16 @@ namespace Book
         }
 
         // Метод печати информации о книге
+        
         public void Print()
         {
-            Console.WriteLine($"Title: {Title}");
-            Console.WriteLine($"Author: {Author}");
-            Console.WriteLine($"Year of Publication: {YearOfPublication}");
-            Console.WriteLine($"Literature Type: {LiteratureType}");
-            Console.WriteLine($"Age of Book: {GetBookAge()} years");
+            Console.WriteLine($"Название: {Title}");
+            Console.WriteLine($"Автор: {Author}");
+            Console.WriteLine($"Год публикации: {YearOfPublication}");
+            Console.WriteLine($"Вид литературы: {LiteratureType}");
+            Console.WriteLine($"Возраст книги: {GetBookAge()} лет");
         }
-        //
+        
         // Статический метод для получения литературы из строки
         public static LiteratureType ParseLiteratureType(string input)
         {
