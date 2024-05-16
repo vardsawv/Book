@@ -39,7 +39,7 @@ namespace Book
             set
             {
                 if (string.IsNullOrWhiteSpace(value))
-                    throw new ArgumentException("Title cannot be empty.");
+                    throw new ArgumentException("Название не может быть пустым");
                 title = value;
             }
         }
