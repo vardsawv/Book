@@ -80,8 +80,7 @@ namespace Book
         // Метод вычисления возраста книги
         public int GetBookAge()
         {
-            int currentYear = DateTime.Now.Year;
-            return currentYear - yearOfPublication;
+            return DateTime.Now.Year - yearOfPublication;
         }
 
         // Метод печати информации о книге
