@@ -50,7 +50,7 @@ namespace Book
             set
             {
                 if (string.IsNullOrWhiteSpace(value))
-                    throw new ArgumentException("Author cannot be empty.");
+                    throw new ArgumentException("Автор не может быть пустым");
                 author = value;
             }
         }
