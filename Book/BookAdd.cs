@@ -30,11 +30,7 @@ namespace Book
             LiteratureType = literatureType;
         }
 
-        // Деструктор
-        ~Book()
-        {
-
-        }
+        
 
         // Свойства для установки и возвращения значений полей
         public string Title
