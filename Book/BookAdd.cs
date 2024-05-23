@@ -36,6 +36,8 @@ namespace Book
 
         }
 
+        
+
         // Свойства для установки и возвращения значений полей
         public string Title
         {
@@ -43,6 +45,7 @@ namespace Book
             set
             {
                 if (string.IsNullOrWhiteSpace(value))
+                    // Перевести сообщение на русский язык
                     throw new ArgumentException("Title cannot be empty.");
                 title = value;
             }
@@ -54,6 +57,7 @@ namespace Book
             set
             {
                 if (string.IsNullOrWhiteSpace(value))
+                    // Перевести сообщение на русский язык
                     throw new ArgumentException("Author cannot be empty.");
                 author = value;
             }
@@ -66,6 +70,7 @@ namespace Book
             {
                 int currentYear = DateTime.Now.Year;
                 if (value <= 0 || value > currentYear)
+                    // Перевести сообщение на русский язык
                     throw new ArgumentException("Year of publication must be a positive number and not in the future.");
                 yearOfPublication = value;
             }
@@ -87,6 +92,7 @@ namespace Book
         // Метод печати информации о книге
         public void Print()
         {
+            // Перевести названия на русский язык
             Console.WriteLine($"Title: {Title}");
             Console.WriteLine($"Author: {Author}");
             Console.WriteLine($"Year of Publication: {YearOfPublication}");
